@@ -15,7 +15,12 @@ app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
 
-    res.send("Tout va bien");
+    res.render("index", {title: "Jaune congo"});
+})
+
+
+app.get("/produit/:id", (req, res) => {
+    res.render("articles/detail")
 })
 
 
