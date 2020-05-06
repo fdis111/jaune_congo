@@ -1,52 +1,53 @@
+@font-face {
+    font-family: gilroy;
+    src: url(../fonts/gilroy/Gilroy-Light.otf);
+  }
 
+body, h1, h2, h3
+{
+    margin: 0;
+    padding: 0;
+}
 
-
-
-
-
-
-/* header 1 */
-#nav1
+.h-navbar-contact-container
 {
     background-color: yellow;
-    
 }
-#block1
+.content
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 70%;
+    margin: auto;
 }
-#slogan
+.h-navbar-contact
 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
-#menu1
+#contact-slogan a
 {
-    grid-column-start: 3;
-    grid-column-end: 6;
-}
-#menu1 ul li
-{
-    display: inline-block;
-}
-
-#menu1 ul li a
-{
-    padding: 10px;
+    font-size: 15px;
+    font-family: gilroy, sans-serif;
     color: black;
-}
-#menu1 ul li :hover
-{
+    font-weight: normal;
     text-decoration: none;
 }
-.media-social a
+.h-navbar-contact-menu-link
 {
-    background-color: none;
+    font-size: 15px;
+    font-family: gilroy, sans-serif;
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    padding: 12px;
 }
-
-/* header 2 */
+.h-navbar-contact-menu-link-icon
+{
+    margin-left: 5px;
+    color: black;
+}
 
 
 
