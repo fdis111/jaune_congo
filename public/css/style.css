@@ -1,0 +1,52 @@
+
+
+
+
+
+
+
+/* header 1 */
+#nav1
+{
+    background-color: yellow;
+    
+}
+#block1
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#slogan
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+#menu1
+{
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+#menu1 ul li
+{
+    display: inline-block;
+}
+
+#menu1 ul li a
+{
+    padding: 10px;
+    color: black;
+}
+#menu1 ul li :hover
+{
+    text-decoration: none;
+}
+.media-social a
+{
+    background-color: none;
+}
+
+/* header 2 */
+
+
+

@@ -1,6 +1,6 @@
 const express = require("express");
 const ejs = require("ejs-blocks");
-
+const sql = require("./config/db_config")
 const port = 8000;
 const app = express();
 
@@ -13,14 +13,31 @@ app.engine("ejs", ejs);
 app.set("view engine", "ejs");
 
 
-app.get("/", (req, res) => {
 
-    res.render("index", {title: "Jaune congo"});
+app.use(express.static('public'))
+
+
+
+
+app.get("/", (req, res) => {
+    sql.query(`select * from produits`,  (error , result) => {
+        if (error)
+        {
+            throw error;
+        }
+        else
+        {
+            res.render("index", {title: "Jaune congo", produits: result});
+        }
+    })
+
+    
 })
 
 
 app.get("/produit/:id", (req, res) => {
-    res.render("articles/detail")
+
+    res.render("articles/detail", {title: "un article"})
 })
 
 
