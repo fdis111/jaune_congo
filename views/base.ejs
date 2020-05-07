@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title><%= title %></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+
 
 </head>
 <body>
@@ -40,22 +42,85 @@
                     <a href="#" class="h-navbar-info-menu-link">Fruits</a>
                     <a href="#" class="h-navbar-info-menu-link">Herbes aromatiques</a>
                     <a href="#" class="h-navbar-info-menu-link">Paniers hebdomadaires</a>
-                    <a href="#" class="h-navbar-info-menu-link">Plus</a>
+                    <a href="#" class="h-navbar-info-menu-link">Plus <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 </div>
                 <div class="h-navbar-info-panier">
-                    <a href="#" class="h-navbar-info-panier-link">Connexion</a>
-                    <a href="#" class="h-navbar-info-panier-link"> Panier /$0.00 <i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                    <a href="#" class="h-navbar-info-panier-link">Connexion </a>
+                    <span>|</span>
+                    <a href="#" class="h-navbar-info-panier-link"> Panier / $0.00 <i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
     </header>
 
-
+    <section>
+        <%- body -%>
+    </section>
 
 
     <footer>
-        
+        <div class="f-menu-container">
+            <div class="content f-menu-infos">
+                <div class="row">
+                    <div class="col-sm ">
+                      <span class="f-menu-title">A notre propos</span>
+                      <div class="souligne"></div>
+                      <div class="f-menu-a-notre-propos f-menu">
+                        <ul>
+                            <li class="f-menu-items"><a href="#">Notre vision</a></li>
+                            <hr>
+                            <li class="f-menu-items"><a href="#">L'entreprise</a></li>
+                            <hr>
+                            <li class="f-menu-items"><a href="#">Le contexte</a></li>
+                            <hr>
+                            <li class="f-menu-items"><a href="#">Participer au développement de JauneCongo</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm">
+                      <span class="f-menu-title">Service Client</span>
+                      <div class="souligne"></div>
+                      <div class="f-menu-service-client f-menu">
+                          <ul>
+                              <li class="f-menu-items"><a href="#">Infos qualité</a></li>
+                              <hr>
+                              <li class="f-menu-items"><a href="#">Infos livraisons</a></li>
+                              <hr>
+                              <li class="f-menu-items"><a href="#">Infos paiements</a></li>
+                          </ul>
+                      </div>
+                    </div>  
+                    <div class="col-sm">
+                      <span class="f-menu-title">Partageons nos recettes !</span>
+                        <div class="souligne"></div>
+                        <div class="f-menu-recettes f-menu">
+                            <ul>
+                                <li class="f-menu-items"><a href="#">Recettes et astuces fraicheur</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="f-copi-container">
+            <div class="content">
+                <div class="row">
+                    <div class="col">
+                        <div class="f-copi-infos">
+                            Copyright 2019 &copy <span style="color: white;">Jaune congo</span> <br>
+                            Site créé par <span> <a href="#">Kinshasa digital</a> </span> et Jaune congo
+                        </div>
+                    </div>
+                    <div class="col">
+                      <!-- les logo  -->
+                    </div>
+                  </div>
+           
+            </div>
+        </div>
     </footer>
+    <script src="js/jquery.min.css"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
